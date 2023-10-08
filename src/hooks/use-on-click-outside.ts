@@ -8,12 +8,16 @@ export const useOnClickOutside = <T extends HTMLElement = HTMLElement>(
 ) => {
   useEffect(() => {
     const listener = (event: Event) => {
+
       const el = ref?.current
       if (!el || el.contains((event?.target as Node) || null)) {
         return
       }
 
-      handler(event) // Call the handler only if the click is outside of the element passed.
+      handler(event) 
+
+
+      //only called when the event is outside the element
     }
 
     document.addEventListener('mousedown', listener)
@@ -23,5 +27,5 @@ export const useOnClickOutside = <T extends HTMLElement = HTMLElement>(
       document.removeEventListener('mousedown', listener)
       document.removeEventListener('touchstart', listener)
     }
-  }, [ref, handler]) // Reload only if ref or handler changes
+  }, [ref, handler])
 }
