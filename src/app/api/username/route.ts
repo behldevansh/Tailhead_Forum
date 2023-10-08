@@ -43,6 +43,13 @@ export async function PATCH(req: Request) {
       return new Response(error.message, { status: 400 })
     }
 
+
+    // const subscriptionExists = await db.subscription.findFirst({
+    //   where: {
+    //     subredditId,
+    //     userId: session.user.id,
+    //   },
+    // })
     return new Response(
       'Could not update username at this time. Please try later',
       { status: 500 }

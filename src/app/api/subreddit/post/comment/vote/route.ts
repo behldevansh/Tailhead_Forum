@@ -16,6 +16,8 @@ export async function PATCH(req: Request) {
     }
 
     // check if user has already voted on this post
+
+    //initial upvote check
     const existingVote = await db.commentVote.findFirst({
       where: {
         userId: session.user.id,
@@ -25,6 +27,8 @@ export async function PATCH(req: Request) {
 
     if (existingVote) {
       // if vote type is the same as existing vote, delete the vote
+
+      //function to check if vote type is the same as existing vote
       if (existingVote.type === voteType) {
         await db.commentVote.delete({
           where: {

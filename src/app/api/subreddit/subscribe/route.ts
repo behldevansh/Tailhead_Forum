@@ -14,6 +14,10 @@ export async function POST(req: Request) {
     const body = await req.json()
     const { subredditId } = SubredditSubscriptionValidator.parse(body)
 
+
+
+
+
     // check if user has already subscribed to subreddit
     const subscriptionExists = await db.subscription.findFirst({
       where: {
@@ -36,6 +40,15 @@ export async function POST(req: Request) {
       },
     })
 
+
+
+
+    // const subscriptionExists = await db.subscription.findFirst({
+    //   where: {
+    //     subredditId,
+    //     userId: session.user.id,
+    //   },
+    // })
     return new Response(subredditId)
   } catch (error) {
     (error)

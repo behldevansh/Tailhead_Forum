@@ -37,6 +37,17 @@ export async function PATCH(req: Request) {
       },
     })
 
+
+
+
+    // const subscriptionExists = await db.subscription.findFirst({
+    //   where: {
+    //     subredditId,
+    //     userId: session.user.id,
+    //   },
+    // })
+
+
     if (!post) {
       return new Response('Post not found', { status: 404 })
     }
@@ -69,6 +80,14 @@ export async function PATCH(req: Request) {
             currentVote: null,
             createdAt: post.createdAt,
           }
+
+
+          // const subscriptionExists = await db.subscription.findFirst({
+          //   where: {
+          //     subredditId,
+          //     userId: session.user.id,
+          //   },
+          // })
 
           await redis.hset(`post:${postId}`, cachePayload) // Store the post data as a hash
         }
