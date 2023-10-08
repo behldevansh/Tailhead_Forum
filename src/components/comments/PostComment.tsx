@@ -55,16 +55,25 @@ const PostComment: FC<PostCommentProps> = ({
       return data
     },
 
+
+
     onError: () => {
       return toast({
         title: 'Something went wrong.',
         description: "Comment wasn't created successfully. Please try again.",
         variant: 'destructive',
+
+
       })
     },
     onSuccess: () => {
       router.refresh()
       setIsReplying(false)
+
+      // return toast({
+      //   title: 'Comment created.',
+      //   description: 'Your comment was created successfully.',
+      //   variant: 'success',
     },
   })
 
@@ -87,6 +96,10 @@ const PostComment: FC<PostCommentProps> = ({
         </div>
       </div>
 
+
+
+
+
       <p className='text-sm text-zinc-900 mt-2'>{comment.text}</p>
 
       <div className='flex gap-2 items-center'>
@@ -107,6 +120,7 @@ const PostComment: FC<PostCommentProps> = ({
           Reply
         </Button>
       </div>
+
 
       {isReplying ? (
         <div className='grid w-full gap-1.5'>
