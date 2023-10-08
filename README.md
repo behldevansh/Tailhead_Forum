@@ -1,27 +1,51 @@
 
-# Breadit - A Modern Fullstack Reddit Clone 
+# Tailhead 
+ In continuation of my previous Tailhead Social Project [Tailhead_Socials](https://github.com/behldevansh/Tailhead_Socials),introducing [Tailhead_Forums](https://github.com/behldevansh/Tailhead_Forum)
 
-Built with the Next.js App Router, TypeScript & Tailwind
 
+
+## Tech Used
+- NextJS for Server-side Rendering (SSR)
+- Google Authentication using NextAuth
+- Tailwind
+- Prisma to write data in efficein and secure way. 
 
 ## Features
+- Login with Google using NextAuth.js.
+- You have a Custom feed about pets and interests.
+- A Homepage displaying all the posts.
+- An option to upvote, or downvote a post.
+- A dedicated page for reading and commenting on posts.
+- Upload Image, text, code .
 
- - Infinite scrolling for dynamically loading posts
- - Authentication using NextAuth & Google
- - Custom feed for authenticated users
- - Advanced caching using [Upstash Redis](https://upstash.com/?utm_source=Josh2)
- - Optimistic updates for a great user experience
- - Modern data fetching using React-Query
- - A beautiful and highly functional post editor
- - Image uploads & link previews
- - Full comment functionality with nested replies
- - ... and much more
-
-
-# used
-
-- google console cloud with next auth for login with google
-- planetscale serverless mysql platform
 
 yarn prisma db push
 yarn prisma generate
+
+## Getting started
+
+To get started with this project, run
+
+```bash
+  git clone git@github.com:behldevansh/Tailhead_Forum.git
+```
+
+and copy these .env.example variables into a separate .env file:
+
+```bash
+DATABASE_URL=
+NEXTAUTH_SECRET=
+
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
+
+UPLOADTHING_SECRET=
+UPLOADTHING_APP_ID=
+
+REDIS_URL=
+REDIS_SECRET=
+```
+
+```bash
+  npm i
+```
