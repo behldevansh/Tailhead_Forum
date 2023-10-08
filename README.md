@@ -12,7 +12,7 @@ Are you a passionate pet parent, an animal enthusiast, or simply someone who can
 - NextJS for Server-side Rendering (SSR)
 - Google Authentication using NextAuth
 - Tailwind
-- Prisma to write data in efficein and secure way. 
+- Prisma to write data in efficeint and secure way. 
 
 ## Features
 - Login with Google using NextAuth.js.
@@ -50,6 +50,7 @@ REDIS_URL=
 REDIS_SECRET=
 ```
 
+install packages
 ```bash
   npm i
 ```
