@@ -28,26 +28,8 @@ yarn prisma generate
 
 ## Getting started
 
-To get started with this project, run
-
 ```bash
   git clone git@github.com:behldevansh/Tailhead_Forum.git
-```
-
-and copy these .env.example variables into a separate .env file:
-
-```bash
-DATABASE_URL=
-NEXTAUTH_SECRET=
-
-GOOGLE_CLIENT_ID=
-GOOGLE_CLIENT_SECRET=
-
-UPLOADTHING_SECRET=
-UPLOADTHING_APP_ID=
-
-REDIS_URL=
-REDIS_SECRET=
 ```
 
 install packages

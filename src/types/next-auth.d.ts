@@ -3,17 +3,24 @@ import type { JWT } from 'next-auth/jwt'
 
 type UserId = string
 
+
+//using jsonwebtoken to create a token for the user
 declare module 'next-auth/jwt' {
   interface JWT {
+
     id: UserId
+
     username?: string | null
   }
 }
 
 declare module 'next-auth' {
   interface Session {
+
     user: User & {
+
       id: UserId
+      
       username?: string | null
     }
   }
