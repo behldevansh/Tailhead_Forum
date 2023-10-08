@@ -1,12 +1,18 @@
 import { ClassValue, clsx } from 'clsx'
 import { twMerge } from 'tailwind-merge'
+
 import { formatDistanceToNowStrict } from 'date-fns'
+
 import locale from 'date-fns/locale/en-US'
 
+
+//function to merge tailwind classes with clsx
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
 
+
+//setting up defaults for formatDistanceToNowStrict
 const formatDistanceLocale = {
   lessThanXSeconds: 'just now',
   xSeconds: 'just now',
@@ -34,6 +40,7 @@ function formatDistance(token: string, count: number, options?: any): string {
   ].replace('{{count}}', count.toString())
 
   if (options.addSuffix) {
+    //used to show time of post
     if (options.comparison > 0) {
       return 'in ' + result
     } else {
@@ -45,8 +52,11 @@ function formatDistance(token: string, count: number, options?: any): string {
   return result
 }
 
+
+//function to format time to now
 export function formatTimeToNow(date: Date): string {
   return formatDistanceToNowStrict(date, {
+    //used to show time of post
     addSuffix: true,
     locale: {
       ...locale,

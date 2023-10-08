@@ -7,3 +7,9 @@ export const UsernameValidator = z.object({
     .max(32)
     .regex(/^[a-zA-Z0-9_]+$/),
 })
+
+
+
+// export const SubredditSubscriptionValidator = z.object({
+//   subredditId: z.string(),
+// })
