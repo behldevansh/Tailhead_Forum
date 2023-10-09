@@ -22,11 +22,13 @@ Are you a passionate pet parent, an animal enthusiast, or simply someone who can
 - A Homepage displaying all the posts.
 - An option to upvote, or downvote a post.
 - A dedicated page for reading and commenting on posts.
-- Upload Image, text, code .
+- Upload Image, text, code, table, links .
 
 
 ## Inspiration
-[Stack Overflow](https://stackoverflow.com/) & [Reddit](https://www.reddit.com)
+- [Stack Overflow](https://stackoverflow.com/) 
+- [Quora](https://www.quora.com/)
+- [Reddit](https://www.reddit.com)
 
 
 
