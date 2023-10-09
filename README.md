@@ -25,6 +25,11 @@ Are you a passionate pet parent, an animal enthusiast, or simply someone who can
 - Upload Image, text, code .
 
 
+## Inspiration
+[Stack Overflow](https://stackoverflow.com/) & [Reddit](https://www.reddit.com)
+
+
+
 ## Getting started
 
 ```bash
