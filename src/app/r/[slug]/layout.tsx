@@ -69,9 +69,9 @@ const Layout = async ({
           <ul className='flex flex-col col-span-2 space-y-6'>{children}</ul>
 
           {/* info sidebar */}
-          <div className='overflow-hidden h-fit rounded-lg border border-gray-200 order-first md:order-last'>
+          <div className='overflow-hidden h-fit rounded-lg border border-gray-200 order-first md:order-last bg-indigo-100'>
             <div className='px-6 py-4'>
-              <p className='font-semibold py-3'>About r/{subreddit.name}</p>
+              <p className='font-semibold py-3'>About tail/{subreddit.name}</p>
             </div>
             <dl className='divide-y divide-gray-100 px-6 py-4 text-sm leading-6 bg-white'>
               <div className='flex justify-between gap-x-4 py-3'>
